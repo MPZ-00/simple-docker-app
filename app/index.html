@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Docker App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <main class='container' id='container'>
+        <header>
+            <h1>User profile</h1>
+        </header>
+        <img src='images/Bits_und_Bytes_Logo.png' alt="Profile picture of the user">
+        <section>
+            <span>Name: </span><h3 id='name'>Martin Prätzlich</h3>
+            <hr />
+            <span>Email: </span><h3 id='email'>martin.praetzlich@example.com</h3>
+            <hr />
+            <span>Interests: </span><h3 id='interests'>coding</h3>
+            <hr />
+        </section>
+        <button class='button' onclick="updateProfile()">Edit Profile</button>
+        <button onclick="toggleTheme()">Toggle theme</button>
+    </main>
+    
+    <div class='container' id='container2'>
+        <h1>User profile</h1>
+        <img src='profile-picture' alt="user-profile">
+        <span>Name: </span><h3 id='name'>Martin P</h3>
+        <hr />
+        <span>Email: </span><h3 id='email'>martin.p@example.com</h3>
+        <hr />
+        <span>Interests: </span><h3 id='interests'>coding</h3>
+        <hr />
+        <button class='button' onclick="updateProfile()">Edit Profile</button>
+    </div>
+    <div class='container' id='container-edit'>
+        <h1>User profile</h1>
+        <img src='images/Bits_und_Bytes_Logo.png' alt="user-profile">
+        <span>Name: </span><label for='input-name'></label><input type="text" id='input-name' value='Martin P' />
+        <hr />
+        <span>Email: </span><label for='input-email'></label><input type="email" id='input-email' value='martin.p@example.com' />
+        <hr />
+        <span>Interests: </span><label for='input-interests'></label><input type="text" id='input-interests' value='coding' />
+        <hr />
+        <button class='button' onclick="handleUpdateProfileRequest()">Update Profile</button>
+    </div>
+</body>
+</html>
