@@ -31,31 +31,18 @@
         <button class="button" onclick="toggleTheme()">Toggle theme</button>
     </main>
 
-    <!-- <div class='container' id='container2'>
-        <h1>User profile</h1>
-        <img src='profile-picture' alt="user-profile">
-        <span>Name: </span>
-        <h3 id='name'>Martin P</h3>
-        <hr />
-        <span>Email: </span>
-        <h3 id='email'>martin.p@example.com</h3>
-        <hr />
-        <span>Interests: </span>
-        <h3 id='interests'>coding</h3>
-        <hr />
-        <button class='button' onclick="updateProfile()">Edit Profile</button>
-    </div> -->
     <div class='container' id='container-edit'>
         <h1>User profile</h1>
         <img src='images/profile-picture.jpg' alt="user-profile">
-        <span>Name: </span><label for='input-name'></label><input type="text" id='input-name' value='Martin P' />
+        <label for='input-name'>Name: </label><input type="text" id='input-name' value='Martin Prätzlich' />
         <hr />
-        <span>Email: </span><label for='input-email'></label><input type="email" id='input-email'
+        <label for='input-email'>Email: </label><input type="email" id='input-email'
             value='martin.p@example.com' />
         <hr />
-        <span>Interests: </span><label for='input-interests'></label><input type="text" id='input-interests'
+        <label for='input-interests'>Interests: </label><input type="text" id='input-interests'
             value='coding' />
         <hr />
+        <button class='button' onclick="handleCancelEdit()">Cancel</button>
         <button class='button' onclick="handleUpdateProfileRequest()">Update Profile</button>
     </div>
 </body>

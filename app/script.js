@@ -65,3 +65,11 @@ function toggleTheme() {
     rootStyles.setProperty("--button-text-color", "var(--button-text-color-" + themes[currentTheme] + ")");
     rootStyles.setProperty("--button-hover-background-color", "var(--button-hover-background-color-" + themes[currentTheme] + ")");
 }
+
+function handleCancelEdit() {
+    const contEdit = document.getElementById('container-edit');
+    const cont = document.getElementById('container');
+
+    cont.style.display = 'block';
+    contEdit.style.display = 'none';
+}

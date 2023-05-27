@@ -1,22 +1,27 @@
 {
-  "name": "simple-docker-app",
-  "version": "1.0.0",
-  "description": "learing docker",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MPZ-00/simple-docker-app.git"
-  },
-  "keywords": [
-    "docker"
-  ],
-  "author": "Martin Prätzlich",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MPZ-00/simple-docker-app/issues"
-  },
-  "homepage": "https://github.com/MPZ-00/simple-docker-app#readme"
+    "name": "simple-docker-app",
+    "version": "1.0.0",
+    "description": "learing docker",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MPZ-00/simple-docker-app.git"
+    },
+    "keywords": [
+        "docker"
+    ],
+    "author": "Martin Prätzlich",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MPZ-00/simple-docker-app/issues"
+    },
+    "homepage": "https://github.com/MPZ-00/simple-docker-app#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "mongodb": "^3.3.3"
+    }
 }
