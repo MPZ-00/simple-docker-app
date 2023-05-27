@@ -1,0 +1,44 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - mongo-network
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_SERVER: mongodb
+    networks:
+      - mongo-network
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: simple-docker-app
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      MONGO_URL: mongodb://admin:password@mongodb
+    networks:
+      - mongo-network
+    depends_on:
+      - mongodb
+
+networks:
+  mongo-network:
+    driver: bridge
+
+volumes:
+  mongodb_data_container:
