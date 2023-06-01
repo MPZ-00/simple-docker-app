@@ -1,7 +1,7 @@
 db = db.getSiblingDB('my-db');
 db.createUser({
-    user: 'overlord',
-    pwd: '+lhK>5Ge-MI9gwLR',
+    user: 'admin',
+    pwd: 'password',
     roles: [{
         role: 'readWrite',
         db: 'my-db'
