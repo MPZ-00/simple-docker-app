@@ -48,6 +48,6 @@ This project is licensed under the ISC License. See the `LICENSE` file for more 
 
 ## Contact
 
-Martin Prätzlich - [Github](https://github.com/MPZ-00)
+@mpz_00 on my [Discord Server - Bits & Bytes](https://discord.gg/DXWuZUBW2C)
 
 Project Link: [https://github.com/MPZ-00/simple-docker-app](https://github.com/MPZ-00/simple-docker-app)
